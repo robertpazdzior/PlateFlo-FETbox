@@ -8,4 +8,4 @@ CAD\FETbox_complete.f3d | Complete Fusion360 model, including key board componen
 CAD\FETbox_complete.step | As above, but compatible with open-source software.
 
 ## CAD Model Exploded Render
-![](..\imgs\fetbox_render_exploded.png)
+![](../imgs/fetbox_render_exploded.png)
