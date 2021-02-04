@@ -108,7 +108,7 @@ void serial_listen(char* cmdArray) {
 void cmd_interpret(char* cmd) {
     /* Module ID query */
     if(cmd[0] == CMD_ID) {
-      Serial.write("hwr_ctrl");
+      Serial.print("fetbox");
       Serial.print(ID);
       Serial.write("\n");
     }
