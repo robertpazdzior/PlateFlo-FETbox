@@ -9,7 +9,7 @@ system and documentation of its components. ![](./imgs/fetbox_real.png)
 Hosted here are all of the necessary files to build a FETbox hardware
 controller. Source files are also included should you with to make 
 modifications for your application.
-* [Enclosure](./Enclosure)
+* [Enclosure](./Enclosure/STLs)
     * [STLs]() - for 3D printing
     * [CAD](./Enclosure/CAD) - STEP and F3D complete device models
 * [PCB](./PCB)
