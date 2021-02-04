@@ -2,20 +2,20 @@
 FETbox hardware controller for the PlateFlo plate-scale perfusion tissue culture
 system.
 
-See [HardwareX]() and [ReadTheDocs]() for further description and documentation.
-![](./imgs/fetbox.png)
+See [publication]() and [ReadTheDocs]() for a detailed description of the whole
+system and documentation of its components. ![](./imgs/fetbox_real.png)
 
 ## Description
 Hosted here are all of the necessary files to build a FETbox hardware
 controller. Source files are also included should you with to make 
 modifications for your application.
-* Enclosure
-    * .STLs (for 3D printing)
-    * CAD 
-* PCB
+* [Enclosure](./Enclosure)
+    * [STLs]() - for 3D printing
+    * [CAD](./Enclosure/CAD) - STEP and F3D complete device models
+* [PCB](./PCB)
     * [JLCPCB](https://jlcpcb.com/) CAM files (for PCB ordering)
-    * EAGLE `.SCH` and `.BRD` source files
-* Arduino Nano firmware
+    * [EAGLE](https://www.autodesk.com/products/eagle/overview) `.SCH` and `.BRD` [source files](./PCB/EAGLE)
+* Arduino Nano FETbox [firmware](./Firmware_FETbox)
 
 ## License
 This project is copyright of Robert Pazdzior (2020-2021)
