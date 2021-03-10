@@ -157,7 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYzQ5ODU0" projecturn="a.cGVyc29uYWw6dWUyYzQ5ODU0IzIwMTkwMzEzMTgxODE3MzA2" f3durn="urn:adsk.wipprod:dm.lineage:XSRg2R2KSbqNc_NutK_alw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="bbad1f94-8423-4aa5-887e-3d05f9436e3a" lastsyncedrevisionid="bbad1f94-8423-4aa5-887e-3d05f9436e3a" lastboardhashguid="6b42dac5-e6bf-8de4-aef3-2f73661cd47b" lastpushedtime="2020-10-15T15:44:13Z" linktopcb3d="true"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYzQ5ODU0" projecturn="a.cGVyc29uYWw6dWUyYzQ5ODU0IzIwMTkwMzEzMTgxODE3MzA2" f3durn="urn:adsk.wipprod:dm.lineage:XSRg2R2KSbqNc_NutK_alw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="bbad1f94-8423-4aa5-887e-3d05f9436e3a" lastsyncedrevisionid="bbad1f94-8423-4aa5-887e-3d05f9436e3a" lastboardhashguid="6b42dac5-e6bf-8de4-aef3-2f73661cd47b" lastpushedtime="2020-10-15T15:44:13Z" linktopcb3d="false"/>
 <plain>
 <wire x1="0" y1="38.227" x2="0" y2="5.08" width="0" layer="20"/>
 <wire x1="0" y1="5.08" x2="5.08" y2="0" width="0" layer="20" curve="90"/>
@@ -3365,14 +3365,15 @@
 <rectangle x1="118.64975" y1="21.63445" x2="119.14505" y2="21.64715" layer="1" rot="R270"/>
 <rectangle x1="118.64975" y1="18.62455" x2="119.14505" y2="18.63725" layer="1" rot="R270"/>
 <rectangle x1="118.64975" y1="16.97355" x2="119.14505" y2="16.98625" layer="1" rot="R270"/>
-<text x="113.919" y="21.7805" size="1.27" layer="21" font="vector" rot="SR270" align="center">PlateFlo FETbox
-rpazdzior@protonmail.com</text>
+<text x="113.919" y="21.7805" size="1.016" layer="21" font="vector" rot="SR270" align="center">PlateFlo FETbox
+rpazdzior@protonmail.com
+rev.0_Oct14.2020</text>
 <text x="53.975" y="31.75" size="1.778" layer="21" rot="SR0" align="bottom-center">CHAN.1</text>
 <text x="66.675" y="31.75" size="1.778" layer="21" rot="SR0" align="bottom-center">CHAN.2</text>
 <text x="79.375" y="31.75" size="1.778" layer="21" rot="SR0" align="bottom-center">CHAN.3</text>
 <text x="92.075" y="31.75" size="1.778" layer="21" rot="SR0" align="bottom-center">CHAN.4</text>
 <text x="104.775" y="31.75" size="1.778" layer="21" rot="SR0" align="bottom-center">CHAN.5</text>
-<text x="110.49" y="21.59" size="1.27" layer="21" rot="SR270" align="bottom-center">rev.0_Oct14.2020</text>
+<text x="110.49" y="21.59" size="1.016" layer="21" rot="SR270" align="bottom-center"></text>
 <wire x1="3.81" y1="24.13" x2="3.81" y2="19.05" width="0.2032" layer="22"/>
 <wire x1="3.81" y1="26.67" x2="3.81" y2="31.75" width="0.2032" layer="22"/>
 <text x="2.54" y="21.59" size="1.778" layer="22" rot="SMR270" align="center">+12V</text>
@@ -3417,44 +3418,6 @@ rpazdzior@protonmail.com</text>
 <text x="11.43" y="57.15" size="1.778" layer="51">PlateFlo FETbox</text>
 </plain>
 <libraries>
-<library name="transistor-power" urn="urn:adsk.eagle:library:400">
-<description>&lt;b&gt;Power Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="TO220BV" urn="urn:adsk.eagle:footprint:29371/1" library_version="4">
-<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.1524" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.1524" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.1524" layer="21"/>
-<circle x="-4.4958" y="-3.7084" radius="0.254" width="0" layer="21"/>
-<pad name="G" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="D" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="S" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.08" y="-6.0452" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-5.334" y1="-0.762" x2="5.334" y2="0" layer="21"/>
-<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.762" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.762" layer="21"/>
-<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
-<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
-<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.762" layer="21"/>
-<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
-<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="TO220BV" urn="urn:adsk.eagle:package:29484/3" type="model" library_version="4">
-<description>Molded Package
-grid 2.54 mm</description>
-<packageinstances>
-<packageinstance name="TO220BV"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -5094,6 +5057,29 @@ CONN_06
 <text x="-5.08" y="-1.27" size="0.6096" layer="22" rot="SMR90" align="center-right">GND</text>
 <text x="-2.54" y="-1.27" size="0.8128" layer="22" rot="SMR90" align="center-right">3v3</text>
 </package>
+<package name="TO220" urn="urn:adsk.eagle:footprint:29371/1" locally_modified="yes" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
+grid 2.54 mm</description>
+<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.1524" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.1524" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.1524" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.1524" layer="21"/>
+<circle x="-4.4958" y="-3.7084" radius="0.254" width="0" layer="21"/>
+<pad name="G" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="D" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="S" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<text x="-5.08" y="-6.0452" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-5.334" y1="-0.762" x2="5.334" y2="0" layer="21"/>
+<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.762" layer="21"/>
+<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.762" layer="21"/>
+<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
+<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
+<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.762" layer="21"/>
+<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
+<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="CL13845G" urn="urn:adsk.eagle:package:24117076/2" type="model" library_version="2">
@@ -5112,6 +5098,13 @@ CONN_06
 &lt;/ul&gt;&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="2X23"/>
+</packageinstances>
+</package3d>
+<package3d name="TO220BV" urn="urn:adsk.eagle:package:29484/3" type="model" library_version="2" library_locally_modified="yes">
+<description>Molded Package
+grid 2.54 mm</description>
+<packageinstances>
+<packageinstance name="TO220"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -5373,9 +5366,9 @@ Please make sure your boards conform to these design rules.
 <board_group name="CEMM_LOGO"/>
 </groups>
 <elements>
-<element name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="TO220BV" package3d_urn="urn:adsk.eagle:package:29484/3" value="IRF520" x="53.975" y="27.305" smashed="yes">
+<element name="Q1" library="PerfusionHardwareController" library_urn="urn:adsk.eagle:library:24117063" package="TO220" package3d_urn="urn:adsk.eagle:package:29484/3" value="FQP30N06L" x="53.975" y="27.305" smashed="yes">
 <attribute name="NAME" x="52.705" y="21.2598" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="5" x="53.975" y="27.305" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="7" x="53.975" y="27.305" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100" x="51.435" y="15.875" smashed="yes" rot="R90">
 <attribute name="NAME" x="49.911" y="12.827" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -5402,9 +5395,9 @@ Please make sure your boards conform to these design rules.
 <element name="U1" library="PerfusionHardwareController" library_urn="urn:adsk.eagle:library:24117063" package="CL13845G" package3d_urn="urn:adsk.eagle:package:24117076/2" value="CL13845G" x="48.895" y="40.64" smashed="yes">
 <attribute name="NAME" x="52.735" y="40.9" size="1.27" layer="25"/>
 </element>
-<element name="Q2" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="TO220BV" package3d_urn="urn:adsk.eagle:package:29484/3" value="IRF520" x="66.675" y="27.305" smashed="yes">
+<element name="Q2" library="PerfusionHardwareController" library_urn="urn:adsk.eagle:library:24117063" package="TO220" package3d_urn="urn:adsk.eagle:package:29484/3" value="FQP30N06L" x="66.675" y="27.305" smashed="yes">
 <attribute name="NAME" x="65.405" y="21.2598" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="5" x="66.675" y="43.815" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="7" x="66.675" y="43.815" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100" x="64.135" y="15.875" smashed="yes" rot="R90">
 <attribute name="NAME" x="62.611" y="12.827" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -5424,9 +5417,9 @@ Please make sure your boards conform to these design rules.
 <element name="U2" library="PerfusionHardwareController" library_urn="urn:adsk.eagle:library:24117063" package="CL13845G" package3d_urn="urn:adsk.eagle:package:24117076/2" value="CL13845G" x="61.595" y="40.64" smashed="yes">
 <attribute name="NAME" x="65.435" y="40.9" size="1.27" layer="25"/>
 </element>
-<element name="Q3" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="TO220BV" package3d_urn="urn:adsk.eagle:package:29484/3" value="IRF520" x="79.375" y="27.305" smashed="yes">
+<element name="Q3" library="PerfusionHardwareController" library_urn="urn:adsk.eagle:library:24117063" package="TO220" package3d_urn="urn:adsk.eagle:package:29484/3" value="FQP30N06L" x="79.375" y="27.305" smashed="yes">
 <attribute name="NAME" x="78.105" y="21.2598" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="5" x="79.375" y="43.815" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="7" x="79.375" y="43.815" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100" x="76.835" y="15.875" smashed="yes" rot="R90">
 <attribute name="NAME" x="75.311" y="12.827" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -5446,9 +5439,9 @@ Please make sure your boards conform to these design rules.
 <element name="U3" library="PerfusionHardwareController" library_urn="urn:adsk.eagle:library:24117063" package="CL13845G" package3d_urn="urn:adsk.eagle:package:24117076/2" value="CL13845G" x="74.295" y="40.64" smashed="yes">
 <attribute name="NAME" x="78.135" y="40.9" size="1.27" layer="25"/>
 </element>
-<element name="Q4" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="TO220BV" package3d_urn="urn:adsk.eagle:package:29484/3" value="IRF520" x="92.075" y="27.305" smashed="yes">
+<element name="Q4" library="PerfusionHardwareController" library_urn="urn:adsk.eagle:library:24117063" package="TO220" package3d_urn="urn:adsk.eagle:package:29484/3" value="FQP30N06L" x="92.075" y="27.305" smashed="yes">
 <attribute name="NAME" x="90.805" y="21.2598" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="5" x="92.075" y="43.815" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="7" x="92.075" y="43.815" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100" x="89.535" y="15.875" smashed="yes" rot="R90">
 <attribute name="NAME" x="88.011" y="12.827" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -5468,9 +5461,9 @@ Please make sure your boards conform to these design rules.
 <element name="U4" library="PerfusionHardwareController" library_urn="urn:adsk.eagle:library:24117063" package="CL13845G" package3d_urn="urn:adsk.eagle:package:24117076/2" value="CL13845G" x="86.995" y="40.64" smashed="yes">
 <attribute name="NAME" x="90.835" y="40.9" size="1.27" layer="25"/>
 </element>
-<element name="Q5" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="TO220BV" package3d_urn="urn:adsk.eagle:package:29484/3" value="IRF520" x="104.775" y="27.305" smashed="yes">
+<element name="Q5" library="PerfusionHardwareController" library_urn="urn:adsk.eagle:library:24117063" package="TO220" package3d_urn="urn:adsk.eagle:package:29484/3" value="FQP30N06L" x="104.775" y="27.305" smashed="yes">
 <attribute name="NAME" x="103.505" y="21.2598" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="5" x="104.775" y="43.815" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="7" x="104.775" y="43.815" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100" x="102.235" y="15.875" smashed="yes" rot="R90">
 <attribute name="NAME" x="100.711" y="12.827" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -5590,6 +5583,24 @@ Please make sure your boards conform to these design rules.
 <wire x1="40.64" y1="10.16" x2="43.18" y2="10.16" width="1.27" layer="16"/>
 <wire x1="53.34" y1="3.8989" x2="53.34" y2="7.62" width="1.27" layer="1"/>
 <wire x1="6.35" y1="29.21" x2="6.35" y2="31.242" width="2.54" layer="1"/>
+<wire x1="107.315" y1="20.955" x2="107.315" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="94.615" y1="24.765" x2="107.315" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="94.615" y1="20.955" x2="94.615" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="24.765" x2="94.615" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="20.955" x2="81.915" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="69.215" y1="24.765" x2="81.915" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="69.215" y1="20.955" x2="69.215" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="56.515" y1="24.765" x2="69.215" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="56.515" y1="20.955" x2="56.515" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="7.62" x2="56.515" y2="20.955" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="10.16" x2="53.34" y2="7.62" width="0" layer="19" extent="1-16"/>
+<wire x1="35.56" y1="10.16" x2="39.37" y2="10.16" width="0" layer="19" extent="16-16"/>
+<wire x1="22.86" y1="5.08" x2="31.75" y2="10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="5.08" x2="13.97" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="11.43" x2="13.97" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="26.67" x2="6.35" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="27.051" x2="6.35" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="27.94" y1="34.925" x2="8.89" y2="31.75" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="D13">
 <contactref element="J1" pad="15"/>

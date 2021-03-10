@@ -1,5 +1,5 @@
 /* 
-  Firmware for PlatePerf FETbox hardware controller. 
+  Firmware for PlateFlo FETbox hardware controller. 
   Target PCB rev.0, Arduino Nano V3
   
   Copyright Robert Pazdzior (2020-2021)
@@ -14,6 +14,12 @@
 #define ID 0		    // Controller ID [0-9], change when using multiple units
 /*=================*/
 
+/* ============== !!!!!!!!!!!!!!!!!! ===================
+MULTIPLY ANY DELAY OR MICROS READING BY THE FACTOR BELOW
+Otherwise comment out the timer freq change in setup(),
+reducing the PWM output of D5, D6 to the audible range.
+======================================================*/
+#define TMR_FACTOR 64
 
 /* Macros for serial command parsing */
 #define CMD_START     '@'   // start of command character
@@ -54,15 +60,17 @@ char inCmd[20];
 void hit_n_hold(int _pin, int _duty = 127, int _delay = 100) {
   /* Reduces heat in solenoid valves, might require tuning of *_duty* */
   digitalWrite(_pin, HIGH); // Hit
-  delay(_delay);
+  delay(_delay * TMR_FACTOR);
   analogWrite(_pin, _duty); // Hold
 }
 
 void ack() {
+  /* Respond command success */
   Serial.write("*\n");
 }
 
 void ack_err() {
+  /* Respond command error */
   Serial.write("#\n");
 }
 
@@ -72,7 +80,8 @@ void serial_listen(char* cmdArray) {
     bool cmdStarted = false, cmdFinished = false;
     unsigned int idx;
 
-    while(Serial.available() > 0) {
+    while(Serial.available() > 0 | cmdStarted) {
+      if(Serial.available() > 0) {
         char inChar = Serial.read();
         if( (inChar == CMD_END) && cmdStarted) {
             cmdFinished = true;
@@ -102,6 +111,7 @@ void serial_listen(char* cmdArray) {
                inCmd[i] = '\0';
             }
         }
+      }
     }
 }
 
@@ -247,7 +257,7 @@ void cmd_interpret(char* cmd) {
       int _pin = atoi(_tempPin);
 
       // Parse command for output value, convert to integer
-      _tempVal[0] = cmd[4];
+      _tempVal[0] = cmd[3];
       _tempVal[1] = '\0';
       int _val = atoi(_tempVal);
 
@@ -311,14 +321,14 @@ void setup() {
   pinMode(PIN_CHAN4, OUTPUT);
   pinMode(PIN_CHAN5, OUTPUT);
 
-  // Adjust PWM frequencies to above audible range. Less annoying.
-  TCCR2B = TCCR2B & B11111000 | B00000001; // Pin 3 PWM freq. to 31kHz
-  //TCCR0B = TCCR0B & B11111000 | B00000001; // Pin 5&6 PWM freq. to 60kHz. AFFECTS GLOBAL TIMER (delay, baud, etc.)!!!
-  TCCR1B = TCCR1B & B11111000 | B00000001; // Pin 9&10 PWM freq. to 31kHz
+  // Adjust PWM frequencies above audible range.
+  // More info: https://arduinoinfo.mywikis.net/wiki/Arduino-PWM-Frequency
+  TCCR2B = TCCR2B & B11111000 | B00000001; // Pin 3 PWM freq. to 31.37kHz
+  TCCR0B = TCCR0B & B11111000 | B00000001; // Pin 5&6 PWM freq. to 62.5kHz. AFFECTS DELAY AND MICROS !!!
+  TCCR1B = TCCR1B & B11111000 | B00000001; // Pin 9&10 PWM freq. to 31.37kHz
 }
 
 void loop() {
   serial_listen(inCmd);
   cmd_interpret(inCmd);
-  delay(50);
 }
