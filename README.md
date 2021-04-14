@@ -2,12 +2,12 @@
 FETbox hardware controller for the PlateFlo plate-scale perfusion tissue culture
 system.
 
-See [publication]() and [ReadTheDocs]() for a detailed description of the whole
+See [publication]() and [ReadTheDocs](https://plateflo.readthedocs.io) for a detailed description of the whole
 system and documentation of its components. ![](./imgs/fetbox_real.png)
 
 ## Description
 Hosted here are all of the necessary files to build a FETbox hardware
-controller. Source files are also included should you with to make 
+controller. Source files are also included should you need to make 
 modifications for your application.
 * [Enclosure](./Enclosure/STLs)
     * [STLs]() - for 3D printing

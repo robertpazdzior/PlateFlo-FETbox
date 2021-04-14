@@ -1,5 +1,5 @@
 # Enclosure 3D Files
-FETbox 3D-printing and CAD design resources.
+FETbox 3D-printing and CAD design resources. See [Build Guide](https://plateflo.readthedocs.io/en/latest/hardware/build_guide.html#d-printing-guidelines) for 3D-printing guidelines & assembly.
 
 File | Description
 ---:  | :---
