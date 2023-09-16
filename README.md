@@ -2,7 +2,7 @@
 FETbox hardware controller for the PlateFlo plate-scale perfusion tissue culture
 system.
 
-See [publication]() and [ReadTheDocs](https://plateflo.readthedocs.io) for a detailed description of the whole
+See [publication](https://doi.org/10.1016/j.ohx.2021.e00222) and [ReadTheDocs](https://plateflo.readthedocs.io) for a detailed description of the whole
 system and documentation of its components. ![](./imgs/fetbox_real.png)
 
 ## Description
